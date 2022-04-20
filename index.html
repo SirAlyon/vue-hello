@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="app">
         <h1>{{h1_text}}</h1>
-        <img v-bind:src="image_link">
-        <button @click="liked">&hearts;</button>
-        <span>{{likes}}</span>
+        <div>Inserisci la grandezza in px dell'immagine da generare:</div>
+        <input type="text" v-model="pic_h">
+        <span>X</span>
+        <input type="text" v-model="pic_w">
+        <button @click="randomPic">Generate Image</button>
+        <div>
+            <img v-bind:src="image_link">
+            <button @click="liked">&hearts;</button>
+            <span>{{likes}}</span> 
+        </div>
+        
     </div>
 
 
