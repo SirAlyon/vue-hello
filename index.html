@@ -15,7 +15,7 @@
         <span>X</span>
         <input type="text" v-model="pic_w">
         <button @click="randomPic">Generate Image</button>
-        <div>
+        <div class="d_none" id="generatedImage">
             <img v-bind:src="image_link">
             <button @click="liked">&hearts;</button>
             <span>{{likes}}</span> 

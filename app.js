@@ -20,6 +20,9 @@ const app = new Vue ({
         randomPic(){
             this.image_link = 'https://picsum.photos/'
             this.image_link += this.pic_h + '/' + this.pic_w
+            const generatedImage = document.getElementById('generatedImage')
+            console.log(generatedImage);
+            generatedImage.classList.remove('d_none')
         }
     }
 })
