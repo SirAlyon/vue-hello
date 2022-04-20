@@ -6,6 +6,13 @@ const app = new Vue ({
     el: '#app',
     data: {
         h1_text: 'Welcome VueJS :)',
-        image_link: 'https://picsum.photos/200/300'
+        image_link: 'https://picsum.photos/200/300',
+        likes: 0
+    },
+    methods: {
+        liked(){
+            this.likes += 1
+            console.log(this.likes);
+        }
     }
 })
